@@ -1,22 +1,33 @@
+table,tr,td {
+  border: 2px solid #000;
+  border-collapse: collapse;
+  margin: 3px;
+}
 .main{
+  display:flex;
+  flex-wrap: wrap;
   width: 100%;
-  background-color: #999;
+  background-color:	#B0C4DE;
+  color: #D8BFD8;
   /* flex box syntax */
-  display: flex;
 }
 .left{
-  width: 25%;
-  background-color: #c45e45;
+  background-color: #778899;
   border: 5px solid #000;
   margin: 5px;
+  flex:1;
   padding: 4px;
+  color: #D2B48C;
   /* background-image: url(); */
 }
 .right{
-  width: 70%;
-  background-color: #666;
+  background-color:	#A0522D;
   border: 5px solid #000;
   margin:5px;
+  flex: 2;
+  padding: 4px;
+  text-align: justify;
+  color:	#40E0D0;
 }
 #name{
   color: green;
@@ -29,8 +40,8 @@
  1280-1024:desctop
 1024-768:Tablet(landscape)
 768-480:Tablet
-480:mobile landscape (or) smaller device
-*/
+480:mobile landscape (or) smaller device */
+
 /* @media screen and (min-width:425px) */
 /* media queries */
 @media only screen and (min-width:1024px) and (max-width:1280px)
@@ -38,23 +49,50 @@
   .main{
     display:flex;
   flex-direction: row;
-width:100%;
+/* width:100%; */
   }
   .left{
-    width: 25%;
-    background-color: #999;
+    background-color:	#00FFFF;
   }
   .right{
-    width: 75%;
-    background-color: pink;
+    background-color:	#FFEBCD;
   }
 }
 @media only screen and (min-width:768px) and (max_width:1024px){
-
+  .main{
+    display:flex;
+  flex-direction: row;
+/* width:100%; */
+  }
+  .left{
+    background-color: red;
+  }
+  .right{
+    background-color:	green;
+  }
 }
 @media only screen and (min-width:480px) and (max_width:768px){
-
+  .main{
+    display:flex;
+  flex-direction: row;
+/* width:100%; */
+  }
+  .left{
+    background-color: blue;
+  }
+  .right{
+    background-color: orange;
+  }
 }
 @media only screen and (min-width:480px){
-
- }
+  .main{
+    display:flex;
+  flex-direction: row;
+  }
+  .left{
+    background-color:skyblue;
+  }
+  .right{
+    background-color: brown;
+  }
+}
